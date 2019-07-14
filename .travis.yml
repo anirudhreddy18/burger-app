@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+stages:
+  - test
+  - deploy
+
+jobs:
+  include:
+    - stage: compile
+      script: npm test

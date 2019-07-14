@@ -11,4 +11,5 @@ stages:
 jobs:
   include:
     - stage: compile
+      install: npm install
       script: npm test
